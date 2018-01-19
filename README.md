@@ -33,7 +33,7 @@ these should be installed or the font setting modified.
 
 ![Redish](screenshots/redish.png "Redish clean and busy.").
 
-## Tagnames on screenshots ##
+## Tag names on screenshots ##
 
 People seemed interested on the tag names on screenshots, so if you want
 something similar they come from the font
@@ -53,7 +53,7 @@ utf codes/characters:
 ```
 
 they should show up when using FiraCode as the font for tag names, adding them
-should be simple matter of using copy paste to ones personal config files.
+is a simple matter of using copy paste to ones personal config files.
 
 ## Licencing ##
 
@@ -61,7 +61,7 @@ As a wallpaper this uses recoloured versions of the wallpaper from the beautiful
 [Joy](https://wiki.debian.org/DebianArt/Themes/Joy) theme authored by Adrien
 Aubourg and used in Debian Wheezy. The wallpapers there are licensed as GPLv2
 and thus wallpapers in this theme being derivative works are also licensed
-GPLv2. This theme is also licensed GPLv2.
+GPLv2. This theme is licensed GPLv2.
 
 Author Niko Humalamäki (nikohuma at gmail.com).
 
