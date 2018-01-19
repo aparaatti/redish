@@ -1,4 +1,4 @@
-# Varsih #
+# Varish #
 
 This is a simple awesome wm theme derived from the
 [default](https://github.com/awesomeWM/awesome/blob/v4.0/themes/default/theme.lua)
