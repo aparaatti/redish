@@ -111,6 +111,8 @@ return {
 
     -- menu --
     menu_height = 15,
+    menu_submenu                              = "",
+    menu_height                               = 20,
 
     -- images --
     wallpaper = variant.wallpaper,
