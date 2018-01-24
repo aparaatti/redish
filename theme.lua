@@ -141,15 +141,18 @@ return {
     titlebar_maximized_button_normal_active   = awesome_default .. "/titlebar/maximized_normal_active.png",
     titlebar_maximized_button_focus_active    = awesome_default .. "/titlebar/maximized_focus_active.png",
 
-    layout_fairh                              = awesome_default .. "/layouts/fairhw.png",
+    -- local --
+    layout_tile                               = theme_path .. "/layouts/tilew.png",
+    layout_max                                = theme_path .. "/layouts/maxw.png",
+    layout_fairh                              = theme_path .. "/layouts/fairhw.png",
+
+    -- default --
     layout_fairv                              = awesome_default .. "/layouts/fairvw.png",
     layout_floating                           = awesome_default .. "/layouts/floatingw.png",
     layout_magnifier                          = awesome_default .. "/layouts/magnifierw.png",
-    layout_max                                = awesome_default .. "/layouts/maxw.png",
     layout_fullscreen                         = awesome_default .. "/layouts/fullscreenw.png",
     layout_tilebottom                         = awesome_default .. "/layouts/tilebottomw.png",
     layout_tileleft                           = awesome_default .. "/layouts/tileleftw.png",
-    layout_tile                               = awesome_default .. "/layouts/tilew.png",
     layout_tiletop                            = awesome_default .. "/layouts/tiletopw.png",
     layout_spiral                             = awesome_default .. "/layouts/spiralw.png",
     layout_dwindle                            = awesome_default .. "/layouts/dwindlew.png",
