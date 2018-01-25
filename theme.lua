@@ -145,19 +145,19 @@ return {
     layout_tile                               = theme_path .. "/layouts/tilew.png",
     layout_max                                = theme_path .. "/layouts/maxw.png",
     layout_fairh                              = theme_path .. "/layouts/fairhw.png",
+    layout_fullscreen                         = theme_path .. "/layouts/fullscreenw.png",
+    layout_spiral                             = theme_path.. "/layouts/spiralw.png",
+    layout_cornerne                           = theme_path .. "/layouts/cornernew.png",
 
     -- default --
     layout_fairv                              = awesome_default .. "/layouts/fairvw.png",
     layout_floating                           = awesome_default .. "/layouts/floatingw.png",
     layout_magnifier                          = awesome_default .. "/layouts/magnifierw.png",
-    layout_fullscreen                         = awesome_default .. "/layouts/fullscreenw.png",
     layout_tilebottom                         = awesome_default .. "/layouts/tilebottomw.png",
     layout_tileleft                           = awesome_default .. "/layouts/tileleftw.png",
     layout_tiletop                            = awesome_default .. "/layouts/tiletopw.png",
-    layout_spiral                             = awesome_default .. "/layouts/spiralw.png",
     layout_dwindle                            = awesome_default .. "/layouts/dwindlew.png",
     layout_cornernw                           = awesome_default .. "/layouts/cornernww.png",
-    layout_cornerne                           = awesome_default .. "/layouts/cornernew.png",
     layout_cornersw                           = awesome_default .. "/layouts/cornersww.png",
     layout_cornerse                           = awesome_default .. "/layouts/cornersew.png",
 }
