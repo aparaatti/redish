@@ -55,7 +55,7 @@ utf codes/characters:
 they should show up when using FiraCode as the font for tag names, adding them
 is a simple matter of using copy paste to ones personal config files.
 
-## Licencing ##
+## Licensing ##
 
 As a wallpaper this uses recoloured versions of the wallpaper from the beautiful
 [Joy](https://wiki.debian.org/DebianArt/Themes/Joy) theme authored by Adrien
