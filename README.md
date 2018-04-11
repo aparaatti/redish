@@ -36,15 +36,19 @@ these should be installed or the font setting modified.
     - added more layout icons modified from default theme
 ```
 
-## Debish ##
+## Screenshots ##
+
+Screenshots are currently not up to date.
+
+### Debish ###
 
 ![Debish](screenshots/debish.png "Debish clean and busy.").
 
-## Redish ##
+### Redish ###
 
 ![Redish](screenshots/redish.png "Redish clean and busy.").
 
-## Tag names on screenshots ##
+### Tag names on screenshots ###
 
 People seemed interested on the tag names on screenshots, so if you want
 something similar they come from the font
