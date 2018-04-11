@@ -1,5 +1,7 @@
 # Varish #
 
+## About ##
+
 This is a simple awesome wm theme derived from the
 [default](https://github.com/awesomeWM/awesome/blob/v4.0/themes/default/theme.lua)
 theme in awesome 4.0 and I intend to keep it working with the latest version.
@@ -8,7 +10,8 @@ The theme has two versions
 1. Debish
 2. Redish
 
-and it comes with Debish selected.
+and it comes with Debish selected. I haven't used reddish and I'll probably
+fork debish to it's own theme.
 
 The Redish can be set up with changing the `variant` variable in `theme.lua`.
 The theme should be installed at `$XDG_CONFIG_HOME/awesome/themes`, which
@@ -24,6 +27,14 @@ beautiful.init(awful.util.getdir("config") .. 'themes/varish/theme.lua')
 Out of the box the theme uses [FiraCode](https://github.com/tonsky/FiraCode)
 and [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans) fonts, so
 these should be installed or the font setting modified.
+
+### Changelog ###
+
+```
+2018-04-11
+    - added vertical bar (use boolean in theme.lua to change, defaults to vertical)
+    - added more layout icons modified from default theme
+```
 
 ## Debish ##
 
