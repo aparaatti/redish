@@ -5,6 +5,8 @@ local fs = gears.filesystem
 -- Awesome Varish theme --
 --------------------------
 
+local VERTICAL_BAR = true
+
 local theme_name = "Varish"
 local theme_path = fs.get_dir("config") .. 'themes/' .. theme_name:lower()
 local awesome_default = fs.get_themes_dir() .. 'default'
@@ -19,14 +21,16 @@ local redish    = {
     tl_border_focus = "#220000",
     urgent_bg       = "#c70036",
     urgent_fg       = "#331111",
+    dark_red        = "#331111",
     gab             = 2,
     border          = 0,
-    border_tasklist = 0,
+    border_tasklist = (function() if VERTICAL_BAR then return 1 else return 0 end end)(),
     wallpaper       = theme_path .. "/wallpaper/redish_joy.svg",
     tasklist_shape  = function(cr, width, height)
                           gears.shape.partially_rounded_rect(cr, width,
-                          height, true, false, true, false, 8)
-                      end
+                          height, not VERTICAL_BAR, VERTICAL_BAR, true, false, 4)
+                      end,
+    tasklist_spacing = (function() if VERTICAL_BAR then return 2 else return 0 end end)()
 }
 
 local debish = {
@@ -39,14 +43,17 @@ local debish = {
     tl_border_focus = "#000000",
     urgent_bg       = "#c70036",
     urgent_fg       = "#000000",
-    gab             = 0,
-    border          = 2,
-    border_tasklist = 0,
+    dark_red        = "#301E45", -- #332222",
+    focus_red       = "#AA0000",
+    gab             = 2,
+    border          = 0,
+    border_tasklist = (function() if VERTICAL_BAR then return 1 else return 0 end end)(),
     wallpaper       = theme_path .. "/wallpaper/redblack_joy.svg",
     tasklist_shape  = function(cr, width, height)
-                           gears.shape.partially_rounded_rect(cr, width,
-                           height, false, false, false, false, 8)
-                      end
+                          gears.shape.partially_rounded_rect(cr, width,
+                          height, false, VERTICAL_BAR, VERTICAL_BAR, false, 4)
+                      end,
+    tasklist_spacing = (function() if VERTICAL_BAR then return 2 else return 0 end end)()
 }
 
 --- Choose your flavour: -------------------------------------------------------
@@ -62,6 +69,7 @@ variant.font_name_notification = "FantasqueSansMono"
 --------- create theme ---------------------------------------------------------
 
 return {
+    vertical = VERTICAL_BAR,
     -- fonts --
     font          = variant.font_name .. " 10",
     tasklist_font = variant.font_name .. " 7",
@@ -93,10 +101,18 @@ return {
     border_marked = variant.urgent_bg,
 
     -- tasklist --
+    tasklist_disable_icon = false,
+    tasklist_disable_task_name = false,
+    tasklist_align = 'center',
+    tasklist_bg_image_normal = variant.dark_red,
+    tasklist_bg_normal = variant.dark_red,
+    tasklist_fg_normal = variant.highlight,
+
     tasklist_shape = variant.tasklist_shape,
     tasklist_shape_border_width = variant.border_tasklist,
-    tasklist_disable_icon = true,
-    tasklist_shape_border_color = variant.highlight,
+    tasklist_shape_border_color = variant.dark_red,
+    tasklist_shape_border_color_focus = variant.dark_red,
+    tasklist_shape_border_color_urgent = variant.focus_fg,
 
     -- taglist --
     taglist_border_focus = variant.tl_border_focus,
@@ -110,7 +126,6 @@ return {
     notification_height = 100,
 
     -- menu --
-    menu_height = 15,
     menu_submenu                              = "",
     menu_height                               = 20,
 
