@@ -1,4 +1,4 @@
-# Varish #
+# Redish #
 
 ## About ##
 
@@ -7,13 +7,6 @@ This is a simple awesome wm theme derived from the
 theme in awesome 4.0 and I intend to keep it working with the latest version.
 The theme has two versions
 
-1. Debish
-2. Redish
-
-and it comes with Debish selected. I haven't used reddish and I'll probably
-fork debish to it's own theme.
-
-The Redish can be set up with changing the `variant` variable in `theme.lua`.
 The theme should be installed at `$XDG_CONFIG_HOME/awesome/themes`, which
 usually is `~/.config/awesome/themes` and it can be activated in awesome
 configuration with:
@@ -31,20 +24,14 @@ these should be installed or the font setting modified.
 ### Changelog ###
 
 ```
+2018-04-30
+    - removed debish from varish and became redish
 2018-04-11
     - added vertical bar (use boolean in theme.lua to change, defaults to vertical)
     - added more layout icons modified from default theme
 ```
 
-## Screenshots ##
-
-Screenshots are currently not up to date.
-
-### Debish ###
-
-![Debish](screenshots/debish.png "Debish clean and busy.").
-
-### Redish ###
+## Screenshot ##
 
 ![Redish](screenshots/redish.png "Redish clean and busy.").
 
@@ -77,6 +64,3 @@ As a wallpaper this uses recoloured versions of the wallpaper from the beautiful
 Aubourg and used in Debian Wheezy. The wallpapers there are licensed as GPLv2
 and thus wallpapers in this theme being derivative works are also licensed
 GPLv2. This theme is licensed GPLv2.
-
-Author Niko Humalamäki (nikohuma at gmail.com).
-
