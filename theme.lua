@@ -2,12 +2,12 @@ local gears = require("gears")
 local fs = gears.filesystem
 
 --------------------------
--- Awesome Varish theme --
+-- Awesome Redish theme --
 --------------------------
 
 local VERTICAL_BAR = true
 
-local theme_name = "Varish"
+local theme_name = "Redish"
 local theme_path = fs.get_dir("config") .. 'themes/' .. theme_name:lower()
 local awesome_default = fs.get_themes_dir() .. 'default'
 
@@ -33,33 +33,10 @@ local redish    = {
     tasklist_spacing = (function() if VERTICAL_BAR then return 2 else return 0 end end)()
 }
 
-local debish = {
-    normal_brd      = "#555555",
-    normal_bg       = "#222222",
-    focus_bg        = "#333333",
-    normal_fg       = "#707070",
-    focus_fg        = "#EEEEEE",
-    highlight       = "#999999",
-    tl_border_focus = "#000000",
-    urgent_bg       = "#c70036",
-    urgent_fg       = "#000000",
-    dark_red        = "#301E45", -- #332222",
-    focus_red       = "#AA0000",
-    gab             = 2,
-    border          = 0,
-    border_tasklist = (function() if VERTICAL_BAR then return 1 else return 0 end end)(),
-    wallpaper       = theme_path .. "/wallpaper/redblack_joy.svg",
-    tasklist_shape  = function(cr, width, height)
-                          gears.shape.partially_rounded_rect(cr, width,
-                          height, false, VERTICAL_BAR, VERTICAL_BAR, false, 4)
-                      end,
-    tasklist_spacing = (function() if VERTICAL_BAR then return 2 else return 0 end end)()
-}
-
 --- Choose your flavour: -------------------------------------------------------
 
 -- local variant = redish
-local variant = debish
+local variant = redish
 
 --- fonts ----------------------------------------------------------------------
 
